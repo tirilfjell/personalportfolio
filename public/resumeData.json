@@ -2,10 +2,10 @@
   "main": {
     "name": "Tiril Fjell",
     "occupation": "Junior Frontend Developer",
-    "description": "Passionate about design. Welcome to my website, feel free to checkout my work and don't hesitate contacting me",
+    "description": "I am passionate about design, and appending new skills. Welcome to my website, feel free to checkout my work, and get to know me. And don't hesitate contacting me",
     "image": "profilepic.jpg",
     "bio": "Lifelong learner, passionated about design and creating beautiful web solutions.  ",
-    "contactmessage": "Questions, job offers, whatever - Don't hesitate contacting me",
+    "contactmessage": "Contact me :)",
     "email": "tiril.fjell@gmail.com",
     "phone": "+47 41570414",
     "address": {
@@ -15,7 +15,7 @@
       "zip": "4614"
     },
     "website": "http://www.tirilfjell.com",
-    "resumedownload": "cv.pdf",
+    "resumedownload": "./resumedownload/tirilfjell-cv.png",
     "social": [
       {
         "name": "facebook",
@@ -65,13 +65,13 @@
         "company": "Bose Coroporation",
         "title": "Sell Through Representative ",
         "years": "Feb 2019 - Apr. 2020",
-        "description": "Technical Coach"
+        "description": "Sell Through Representative"
       },
       {
         "company": "Freelance ",
         "title": "Frontend Developer",
         "years": "2021 - present",
-        "description": "Take on freelance projects"
+        "description": "Freelance projects"
       }
     ],
     "skills": [
