@@ -33,7 +33,6 @@ class Contact extends Component {
               action=""
               method="post"
               id="contactForm"
-              name="contactForm"
               data-netlify="true"
               name="form-name"
               value="contact"
