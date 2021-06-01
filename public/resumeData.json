@@ -14,8 +14,8 @@
       "state": "Norway",
       "zip": "4614"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload": "http://timbakerdev.com",
+    "website": "http://www.tirilfjell.com",
+    "resumedownload": "cv.pdf",
     "social": [
       {
         "name": "facebook",
@@ -34,7 +34,7 @@
       },
       {
         "name": "instagram",
-        "url": "http://instagram.com/tbaker_x",
+        "url": "https://www.instagram.com/tirilfjell/",
         "className": "fa fa-instagram"
       },
       {
@@ -88,20 +88,24 @@
         "level": "70%"
       },
       {
+        "name": "react-native",
+        "level": "70%"
+      },
+      {
         "name": "CSS",
         "level": "90%"
       },
       {
         "name": "HTML5",
-        "level": "100%"
+        "level": "95%"
       },
       {
-        "name": "Bootstrap 5",
+        "name": "Bootstrap5",
         "level": "70%"
       },
       {
-        "name": "Google FireS Store",
-        "level": "10%"
+        "name": "google-firestore",
+        "level": "25%"
       }
     ]
   },

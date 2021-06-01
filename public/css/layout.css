@@ -390,93 +390,107 @@ ul#nav li.current a {
   line-height: 42px;
   border-radius: 3px 0 0 3px;
 }
-/*
+
 .git {
-  	-moz-animation: git 2s ease;
-  	-webkit-animation: git 2s ease;
+  animation: git 2s ease;
 }
 .illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+  animation: illustrator 2s ease;
 }
 .reactjs {
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
+  animation: reactjs 2s ease;
 }
 .css {
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  animation: css 2s ease;
 }
 .html5 {
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  animation: html5 2s ease;
 }
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
+.bootstrap5 {
+  animation: bootstrap5 2s ease;
 }
-.mongodb {
-  	-moz-animation: mongodb 2s ease;
-  	-webkit-animation: mongodb 2s ease;
+.google-firestore {
+  animation: google-firestore 2s ease;
 }
 
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
+.react-native {
+  animation: react-native 2s ease;
 }
 
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
+@keyframes git {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
 }
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
+@keyframes illustrator {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 55%;
+  }
 }
-@-webkit-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+@keyframes reactjs {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
 }
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
+@keyframes react-native {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
 }
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
+@keyframes css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
 }
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+@keyframes html5 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 95%;
+  }
 }
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
+
+@keyframes google-firestore {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes bootstrap5 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes illustrator {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 55%;
+  }
+}
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -1070,17 +1084,18 @@ footer {
 
 footer a,
 footer a:visited {
-  color: #525252;
+  color: #fff;
 }
 footer a:hover,
 footer a:focus {
-  color: #fff;
+  color: #7633f9;
 }
 
 /* copyright */
 footer .copyright {
   margin: 0;
   padding: 0;
+  color: #7633f9;
 }
 footer .copyright li {
   display: inline-block;
@@ -1112,7 +1127,7 @@ footer .social-links li {
   margin: 0;
   padding: 0;
   margin-left: 42px;
-  color: #f06000;
+  color: #fff;
 }
 
 footer .social-links li:first-child {
