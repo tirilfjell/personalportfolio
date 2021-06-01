@@ -45,7 +45,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage": "Hover my skills",
     "education": [
       {
         "school": "Fagskolen Kristiania",
@@ -127,6 +127,12 @@
         "title": "Personal Website",
         "category": "Tiril Fell personal portfolio website",
         "image": "website.png",
+        "url": "https://www.tirilfjell.com"
+      },
+      {
+        "title": "Mapbox, Oslo Secret Spots",
+        "category": "Check out some of Oslos secret spots",
+        "image": "mapbox.png",
         "url": "https://www.tirilfjell.com"
       },
       {

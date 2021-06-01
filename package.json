@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animejs": "^3.2.1",
     "jquery": "^3.6.0",
     "react": "^16.2.0",
+    "react-anime": "^4.0.4",
     "react-dom": "^16.2.0",
     "react-ga": "^2.7.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-typewriter-effect": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
