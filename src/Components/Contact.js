@@ -13,20 +13,6 @@ class Contact extends Component {
       var message = this.props.data.contactmessage;
     }
 
-    document.querySelector("form").addEventListener("submit", handleSubmit);
-
-    const handleSubmit = e => {
-      e.preventDefault();
-      let myForm = document.getElementById("pizzaOrder");
-      let formData = new FormData(myForm);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-      })
-        .then(() => console.log("Form successfully submitted"))
-        .catch(error => alert(error));
-    };
     return (
       <section id="contact">
         <div className="row section-head">
@@ -49,7 +35,10 @@ class Contact extends Component {
               id="contactForm"
               name="contactForm"
               data-netlify="true"
+              name="form-name"
+              value="contact"
             >
+              >
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
