@@ -84,7 +84,12 @@ class Contact extends Component {
                 </div>
 
                 <div>
-                  <button type="submit" className="submit">
+                  <button
+                    type="submit"
+                    value="Submit message"
+                    className="submit"
+                    value="Submit message"
+                  >
                     Submit
                   </button>
                   <span id="image-loader">
