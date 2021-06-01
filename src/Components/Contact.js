@@ -29,15 +29,7 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form
-              action=""
-              method="post"
-              id="contactForm"
-              data-netlify="true"
-              name="form-name"
-              value="contact"
-            >
-              >
+            <form name="contact" netlify netlify-honeypot="bot-field">
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
@@ -87,7 +79,7 @@ class Contact extends Component {
                     cols="50"
                     rows="15"
                     id="contactMessage"
-                    name="contactMessage"
+                    name="message"
                   ></textarea>
                 </div>
 
