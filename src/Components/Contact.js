@@ -88,7 +88,6 @@ class Contact extends Component {
                     type="submit"
                     value="Submit message"
                     className="submit"
-                    value="Submit message"
                   >
                     Submit
                   </button>
