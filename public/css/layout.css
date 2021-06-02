@@ -35,9 +35,7 @@ header {
   height: 800px;
   min-height: 500px;
   width: 100%;
-  background: #161415
-    url("https://frontendjoe.com/images/wallpapers/squares.png") no-repeat top
-    center;
+  background: #161415 url("../images/squares.png") no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;
@@ -815,9 +813,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-  background: #1f1f1f
-    url("https://frontendjoe.com/images/wallpapers/memphis.png") no-repeat
-    center center;
+  background: #1f1f1f url("../images/squares.png") no-repeat center center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
