@@ -1,9 +1,5 @@
 /*
-=====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
+
 
    TOC:
    a. General Styles
@@ -18,11 +14,10 @@
 
 ===================================================================== */
 /* Imports fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
   background: #0f0f0f;
@@ -351,17 +346,6 @@ ul#nav li.current a {
 /*----------------------------------------------*/
 /*swiper
 /*----------------------------------------------*/
-
-.rootstyles {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  height: 100%;
-}
 
 .swiper-container {
   width: 100%;

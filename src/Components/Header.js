@@ -47,7 +47,7 @@ class Header extends Component {
             </li>
             <li>
               <a className="smoothscroll" href="#resume">
-                Resume
+                Skills
               </a>
             </li>
             <li>

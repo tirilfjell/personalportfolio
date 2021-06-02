@@ -9,6 +9,7 @@
     "animejs": "^3.2.1",
     "jquery": "^3.6.0",
     "react": "^16.2.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-anime": "^4.0.4",
     "react-dom": "^16.2.0",
     "react-ga": "^2.7.0",
