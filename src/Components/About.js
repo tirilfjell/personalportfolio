@@ -1,4 +1,11 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMapMarkerAlt,
+  faAddressCard,
+  faChevronLeft,
+  faChevronRight
+} from "@fortawesome/free-solid-svg-icons";
 
 class About extends Component {
   render() {
@@ -26,12 +33,21 @@ class About extends Component {
             />
           </div>
           <div className="nine columns main-col">
-            <h2>About Me</h2>
+            <h2>
+              <FontAwesomeIcon icon={faChevronLeft} /> About Me{" "}
+              <FontAwesomeIcon icon={faChevronRight} />
+            </h2>
 
             <p>{bio}</p>
+            <h2>
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> Work
+            </h2>
+            <p>At the moment hired by</p>
             <div className="row">
               <div className="columns contact-details">
-                <h2>Contact Details</h2>
+                <h2>
+                  <FontAwesomeIcon icon={faAddressCard} /> Contact Details
+                </h2>
                 <p className="address">
                   <span>{name}</span>
                   <br />
