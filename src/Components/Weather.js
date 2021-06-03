@@ -49,7 +49,7 @@ export default class Weather extends React.Component {
       <div className="weather-container">
         <div className="main">
           <div className="weather-text">
-            <p>The Weather in my city Right Now!</p>
+            <p>The weather in my city right now!</p>
           </div>
           <div className="location-box">
             <h1 className="location">{this.state.city_display}</h1>
