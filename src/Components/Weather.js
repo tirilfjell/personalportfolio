@@ -1,98 +1,69 @@
-import React, { useState } from "react";
-const api = {
-  key: "1e7132a6dc655a9b3af2149650b5268e",
-  base: "https://api.openweathermap.org/data/2.5/"
-};
+import React from "react";
 
-function Weather() {
-  const [query, setQuery] = useState("");
-  const [weather, setWeather] = useState({});
-
-  const search = evt => {
-    if (evt.key === "Enter") {
-      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-        .then(res => res.json())
-        .then(result => {
-          setWeather(result);
-          setQuery("");
-          console.log(result);
+export default class Weather extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      isLoading: true,
+      temp: "",
+      city: "Kristiansand",
+      icon: "",
+      city_display: "",
+      desc: "",
+      main: "",
+      humidity: "",
+      pressure: "",
+      visiblity: ""
+    };
+    this.fetch_weather();
+  }
+  fetch_weather = () => {
+    fetch(
+      "http://api.openweathermap.org/data/2.5/weather?q=" +
+        this.state.city +
+        "&appid=1e7132a6dc655a9b3af2149650b5268e"
+    )
+      .then(response => response.json())
+      .then(json => {
+        this.setState({ data: json });
+        this.setState({ temp: (json.main.temp - 273.15).toFixed(1) + "°C" });
+        this.setState({ city_display: json.name });
+        this.setState({ icon: json.weather[0].icon });
+        this.setState({ desc: json.weather[0].description });
+        this.setState({ main: json.weather[0].main });
+        this.setState({ humidity: json.main.humidity + " %" });
+        this.setState({ pressure: json.main.pressure + " hPa" });
+        this.setState({
+          visibility: (json.visibility / 1000).toFixed(2) + " Km"
         });
-    }
+      })
+      .catch(error => console.error(error))
+      .finally(() => {
+        this.setState({ isLoading: false });
+      });
   };
 
-  const dateBuilder = d => {
-    let months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
-    ];
-    let days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ];
-
-    let day = days[d.getDay()];
-    let date = d.getDate();
-    let month = months[d.getMonth()];
-    let year = d.getFullYear();
-
-    return `${day} ${date} ${month} ${year}`;
-  };
-
-  return (
-    <div
-      className={
-        typeof weather.main !== "undefined"
-          ? weather.main.temp > 16
-            ? "app warm"
-            : "app"
-          : "app"
-      }
-    >
-      <main>
-        <div className="search-box">
-          <input
-            type="text"
-            className="search-bar"
-            placeholder="Check Weather In Your City..."
-            onChange={e => setQuery(e.target.value)}
-            value={query}
-            onKeyPress={search}
-          />
-        </div>
-        {typeof weather.main !== "undefined" ? (
-          <div>
-            <div className="location-box">
-              <div className="location">
-                {weather.name}, {weather.sys.country}
-              </div>
-              <div className="date">{dateBuilder(new Date())}</div>
-            </div>
-            <div className="weather-box">
-              <div className="temp">{Math.round(weather.main.temp)}°c</div>
-              <div className="weather">{weather.weather[0].main}</div>
-            </div>
+  render() {
+    return (
+      <div className="weather-container">
+        <div className="main">
+          <div className="weather-text">
+            <p>The Weather in my city Right Now!</p>
           </div>
-        ) : (
-          ""
-        )}
-      </main>
-    </div>
-  );
-}
+          <div className="location-box">
+            <h1 className="location">{this.state.city_display}</h1>
+          </div>
 
-export default Weather;
+          <div className="weather-box">
+            <h2 className="temp">{this.state.temp}</h2>
+            <div className="weather">
+              <p>{this.state.main}</p>
+            </div>
+            <p className="weather-desc">{this.state.desc}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
