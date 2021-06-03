@@ -29,7 +29,7 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form name="contact" netlify netlify-honeypot="bot-field">
+            <form name="contact" netlify-honeypot="bot-field">
               <fieldset>
                 <div>
                   <label htmlFor="contactName">

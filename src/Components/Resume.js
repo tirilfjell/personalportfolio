@@ -29,7 +29,7 @@ class Resume extends Component {
               <span>Skills</span>
             </h1>
             <button id="skillbutton" onClick={refreshPage}>
-              Make My Skills Grow
+              Click To Make Skills Grow
             </button>
           </div>
 
