@@ -2,11 +2,16 @@ import React, { Component } from "react";
 
 class Resume extends Component {
   render() {
+    function refreshPage() {
+      window.location.reload(false);
+    }
+
     if (this.props.data) {
       var skillmessage = this.props.data.skillmessage;
 
       var skills = this.props.data.skills.map(function(skills) {
         var className = " bar-expand " + skills.name.toLowerCase();
+
         return (
           <li key={skills.name}>
             <span style={{ width: skills.level }} className={className}></span>
@@ -23,6 +28,9 @@ class Resume extends Component {
             <h1>
               <span>Skills</span>
             </h1>
+            <button id="skillbutton" onClick={refreshPage}>
+              Make My Skills Grow
+            </button>
           </div>
 
           <div className="nine columns main-col">

@@ -443,6 +443,16 @@
     height: 500px;
   }
 
+  .slider-links {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 1;
+    background: #ffffff9c;
+    padding: 10px;
+    border-radius: 30%;
+  }
+
   .swiper-slide img {
     display: block;
     width: 80%;
