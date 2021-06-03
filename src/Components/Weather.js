@@ -68,7 +68,7 @@ function Weather() {
           <input
             type="text"
             className="search-bar"
-            placeholder="Check Weather in your city"
+            placeholder="Check Weather In Your City..."
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}

@@ -1,8 +1,9 @@
 import React from "react";
-import Weather from "./Weather";
+// import Weather from "./Weather";
+import TestW from "./TestW";
 
 const Today = () => {
-  return <Weather />;
+  return <TestW />;
 };
 
 export default Today;
