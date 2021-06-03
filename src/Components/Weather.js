@@ -20,7 +20,7 @@ export default class Weather extends React.Component {
   }
   fetch_weather = () => {
     fetch(
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
         this.state.city +
         "&appid=1e7132a6dc655a9b3af2149650b5268e"
     )
