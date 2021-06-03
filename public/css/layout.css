@@ -15,6 +15,7 @@
 ===================================================================== */
 /* Imports fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
@@ -227,6 +228,16 @@ ul#nav li.current a {
   line-height: 30px;
   color: #000;
 }
+
+#profilepictext {
+  color: rgba(118, 51, 249, 0.4);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+#pointericon {
+  margin-left: 3px;
+}
 #about .profile-pic {
   position: relative;
   width: 200px;
@@ -262,6 +273,7 @@ ul#nav li.current a {
 #about .contact-details {
   width: 41.66667%;
 }
+
 #about .download {
   width: 58.33333%;
   padding-top: 6px;
@@ -373,7 +385,7 @@ ul#nav li.current a {
 }
 
 .swiper-slide img {
-  display: block;
+  display: relative;
   width: 80%;
   height: 80%;
   object-fit: cover;
@@ -382,6 +394,24 @@ ul#nav li.current a {
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
+}
+
+.slider-links {
+  position: absolute;
+  top: 100px;
+  left: 20%;
+  z-index: 1;
+  background: #ffffff9c;
+  padding: 10px;
+  border-radius: 30%;
+}
+
+.slider-links a {
+  color: #7633f9;
+}
+
+.slider-links a:hover {
+  color: #ffffff;
 }
 
 /*----------------------------------------------*/

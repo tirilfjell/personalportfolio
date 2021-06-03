@@ -4,7 +4,8 @@ import {
   faMapMarkerAlt,
   faAddressCard,
   faChevronLeft,
-  faChevronRight
+  faChevronRight,
+  faHandPointUp
 } from "@fortawesome/free-solid-svg-icons";
 
 class About extends Component {
@@ -31,10 +32,14 @@ class About extends Component {
               src={profilepic}
               alt="Tiril Fjell Profile Pic"
             />
+            <h1 id="profilepictext">
+              Click my picture
+              <FontAwesomeIcon id="pointericon" icon={faHandPointUp} />
+            </h1>
           </div>
           <div className="nine columns main-col">
             <h2>
-              <FontAwesomeIcon icon={faChevronLeft} /> About Me{" "}
+              <FontAwesomeIcon icon={faChevronLeft} /> About Me
               <FontAwesomeIcon icon={faChevronRight} />
             </h2>
 
@@ -42,7 +47,13 @@ class About extends Component {
             <h2>
               <FontAwesomeIcon icon={faMapMarkerAlt} /> Work
             </h2>
-            <p>At the moment hired by</p>
+            <p>
+              <b>At the moment hired by:</b> <br />- On project
+            </p>
+            <p>
+              <b>Available:</b> <br />- Septemper 2021
+            </p>
+
             <div className="row">
               <div className="columns contact-details">
                 <h2>
