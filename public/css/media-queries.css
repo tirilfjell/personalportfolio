@@ -444,12 +444,15 @@
   }
 
   .weather-container {
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-    background-image: url("../images/camo.png");
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../images/camo.png");
+
+  transition: 0.4 ease;
+  height: 400px;
+}
   }
 
   .weather-text {
