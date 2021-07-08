@@ -1313,8 +1313,7 @@ footer .social-links li:first-child {
   position: relative;
   overflow: hidden;
   background-image: url("../images/camo.png");
-  background-size: cover;
-  background-position: bottom;
+
   transition: 0.4 ease;
   height: 400px;
 }
