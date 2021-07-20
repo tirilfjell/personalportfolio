@@ -1307,9 +1307,7 @@ footer .social-links li:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  background-attachment: fixed;
+
   position: relative;
   overflow: hidden;
   background-image: url("../images/camo.png");
