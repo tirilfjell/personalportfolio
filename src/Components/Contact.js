@@ -33,6 +33,7 @@ class Contact extends Component {
               name="contact v1"
               method="post"
               data-netlify="true"
+              data-netlify-honeypot="bot-field"
               onSubmit="submit"
               netlify
             >
