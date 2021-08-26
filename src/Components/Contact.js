@@ -34,6 +34,7 @@ class Contact extends Component {
               method="post"
               data-netlify="true"
               onSubmit="submit"
+              netlify
             >
               <input type="hidden" name="form-name" value="contact v1"></input>
               <fieldset>
