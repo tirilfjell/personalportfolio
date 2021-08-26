@@ -29,7 +29,13 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form name="contact" netlify-honeypot="bot-field">
+            <form
+              name="contact v1"
+              method="post"
+              data-netlify="true"
+              onSubmit="submit"
+            >
+              <input type="hidden" name="form-name" value="contact v1"></input>
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
@@ -38,9 +44,9 @@ class Contact extends Component {
                   <input
                     type="text"
                     defaultValue=""
-                    size="35"
+                    size="40"
                     id="contactName"
-                    name="contactName"
+                    name="first-name"
                     onChange={this.handleChange}
                   />
                 </div>
@@ -50,11 +56,11 @@ class Contact extends Component {
                     Email <span className="required">*</span>
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     defaultValue=""
                     size="35"
                     id="contactEmail"
-                    name="contactEmail"
+                    name="email"
                     onChange={this.handleChange}
                   />
                 </div>
@@ -79,7 +85,7 @@ class Contact extends Component {
                     cols="50"
                     rows="15"
                     id="contactMessage"
-                    name="message"
+                    name="comments"
                   ></textarea>
                 </div>
 

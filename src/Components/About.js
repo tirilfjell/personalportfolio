@@ -14,7 +14,7 @@ class About extends Component {
       var name = this.props.data.name;
       var profilepic = "images/" + this.props.data.image;
       var bio = this.props.data.bio;
-      var street = this.props.data.address.street;
+
       var city = this.props.data.address.city;
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
@@ -47,7 +47,14 @@ class About extends Component {
               <FontAwesomeIcon icon={faMapMarkerAlt} /> Work
             </h2>
             <p>
-              <b>At the moment hired by:</b> <br />- On project
+              Developer at: <br />
+              <a
+                href="https://ellera.no/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4 className="workLink">Ellera AS</h4>
+              </a>
             </p>
 
             <div className="row">
@@ -59,8 +66,6 @@ class About extends Component {
                   <span>{name}</span>
                   <br />
                   <span>
-                    {street}
-                    <br />
                     {city} {state}, {zip}
                   </span>
                   <br />

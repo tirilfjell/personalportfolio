@@ -37,6 +37,18 @@ class Portfolio extends Component {
               <SwiperSlide>
                 <div className="slider-links">
                   <a
+                    href="https://www.kvadraturenvgsapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                </div>
+                <img src={require("../images/appkvadda.png")} alt="test img" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider-links">
+                  <a
                     href="https://annaorenprints.netlify.app"
                     target="_blank"
                     rel="noopener noreferrer"
