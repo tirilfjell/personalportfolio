@@ -251,6 +251,17 @@
       padding-right: 30px;
     }
 
+    .slider-links {
+      position: absolute;
+      top: 100px;
+      left: 20%;
+      z-index: 1;
+      background: #ffffff9c;
+      padding: 40px;
+    
+      font-size: 20px;
+    }
+
     /* Resume Section
    --------------------------------------------------------------------- */
     #resume .header-col {
