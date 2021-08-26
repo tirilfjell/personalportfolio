@@ -43,11 +43,9 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    defaultValue=""
                     size="40"
                     id="contactName"
                     name="first-name"
-                    onChange={this.handleChange}
                   />
                 </div>
 
@@ -57,11 +55,9 @@ class Contact extends Component {
                   </label>
                   <input
                     type="email"
-                    defaultValue=""
                     size="35"
                     id="contactEmail"
                     name="email"
-                    onChange={this.handleChange}
                   />
                 </div>
 
@@ -69,11 +65,9 @@ class Contact extends Component {
                   <label htmlFor="contactSubject">Subject</label>
                   <input
                     type="text"
-                    defaultValue=""
                     size="35"
                     id="contactSubject"
                     name="contactSubject"
-                    onChange={this.handleChange}
                   />
                 </div>
 
