@@ -2,9 +2,7 @@ import React, { Component } from "react";
 
 class Resume extends Component {
   render() {
-    function refreshPage() {
-      window.location.reload(false);
-    }
+   
 
     if (this.props.data) {
       var skillmessage = this.props.data.skillmessage;
@@ -28,9 +26,7 @@ class Resume extends Component {
             <h1>
               <span>Skills</span>
             </h1>
-            <button id="skillbutton" onClick={refreshPage}>
-              Click To Make Skills Grow
-            </button>
+           
           </div>
 
           <div className="nine columns main-col">

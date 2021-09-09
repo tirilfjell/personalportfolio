@@ -6,11 +6,11 @@
     "image": "profilepic.jpg",
     "bio": "Lifelong learner, passionated about design and creating beautiful web solutions.  ",
     "contactmessage": "Contact me :)",
-    "email": "tiril.fjell@gmail.com",
+    "email": "tiril@ellera.no",
     "phone": "+47 41570414",
     "address": {
       "street": "Henrik Wergelands gate",
-      "city": "Kristiansand",
+      "city": "Oslo",
       "state": "Norway",
       "zip": "4614"
     },
@@ -74,6 +74,10 @@
       {
         "name": "google-firestore",
         "level": "25%"
+      },
+      {
+        "name": "vue",
+        "level": "35%"
       }
     ]
   },

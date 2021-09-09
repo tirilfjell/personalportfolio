@@ -582,6 +582,19 @@ ul#nav li.current a {
   padding: 20px;
 }
 
+.vue {
+  animation: vue 2s ease;
+}
+
+.vue:hover {
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 1s ease-in-out;
+  background: #1aac63;
+  padding: 20px;
+}
+
 @keyframes git {
   0% {
     width: 0px;
@@ -654,6 +667,14 @@ ul#nav li.current a {
   }
   100% {
     width: 55%;
+  }
+}
+@keyframes vue {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 35%;
   }
 }
 

@@ -7,7 +7,7 @@ export default class Weather extends React.Component {
       data: [],
       isLoading: true,
       temp: "",
-      city: "Kristiansand",
+      city: "Oslo",
       icon: "",
       city_display: "",
       desc: "",
